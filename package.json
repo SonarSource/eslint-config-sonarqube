@@ -1,0 +1,15 @@
+{
+  "name": "eslint-config-sonarqube",
+  "version": "0.0.0",
+  "description": "ESLint configuration for SonarQube and its plugins.",
+  "main": "index.js",
+  "license": "LGPL-3.0",
+  "peerDependencies": {
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-sonarjs": "^0.1.0",
+    "typescript-eslint-parser": "*"
+  }
+}
