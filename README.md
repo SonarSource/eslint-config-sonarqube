@@ -11,7 +11,7 @@ yarn add --dev \
   eslint-config-sonarqube \
   eslint-plugin-import \
   eslint-plugin-jsx-a11y \
-  eslint-plugin-jsx-promise \
+  eslint-plugin-promise \
   eslint-plugin-react \
   eslint-plugin-sonarjs \
   eslint \
