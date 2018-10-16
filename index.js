@@ -127,7 +127,7 @@ module.exports = {
     "no-unused-vars": "off",
 
     // import
-    "import/extensions": "error",
+    "import/extensions": ["error", "never", { json: "always", md: "always" }],
     "import/first": "error",
     "import/newline-after-import": "error",
     "import/no-absolute-path": "error",
@@ -168,6 +168,7 @@ module.exports = {
     "react/jsx-sort-default-props": "warn",
     "react/jsx-sort-props": "warn",
     "react/no-access-state-in-setstate": "warn",
+    "react/no-deprecated": "warn",
     "react/no-find-dom-node": "warn",
     "react/no-string-refs": "warn",
     "react/no-this-in-sfc": "error",
@@ -192,10 +193,12 @@ module.exports = {
 
     // jsx-a11y
     "jsx-a11y/anchor-has-content": "warn",
+    "jsx-a11y/label-has-associated-control": "warn",
     "jsx-a11y/no-noninteractive-tabindex": "warn",
     "jsx-a11y/no-redundant-roles": "warn",
     "jsx-a11y/no-static-element-interactions": "warn",
 
+    "jsx-a11y/accessible-emoji": "off",
     "jsx-a11y/anchor-is-valid": "off",
     "jsx-a11y/click-events-have-key-events": "off",
     "jsx-a11y/no-autofocus": "off",
@@ -211,10 +214,15 @@ module.exports = {
 
     // sonarjs
     "sonarjs/cognitive-complexity": "warn",
+    "sonarjs/no-duplicate-string": "warn",
     "sonarjs/no-identical-functions": "warn"
   },
 
   settings: {
-    "import/ignore": ["node_modules"]
+    "import/ignore": ["node_modules"],
+
+    react: {
+      version: "16.4"
+    }
   }
 };
