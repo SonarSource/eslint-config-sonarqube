@@ -24,7 +24,7 @@ module.exports = {
     }
   },
 
-  parser: "typescript-eslint-parser",
+  parser: "@typescript-eslint/parser",
 
   plugins: ["import", "jsx-a11y", "react", "promise", "sonarjs"],
 
@@ -167,11 +167,14 @@ module.exports = {
     "react/jsx-pascal-case": "error",
     "react/jsx-sort-default-props": "warn",
     "react/jsx-sort-props": "warn",
+    "react/jsx-fragments": ["warn", "syntax"],
     "react/no-access-state-in-setstate": "warn",
     "react/no-deprecated": "warn",
     "react/no-find-dom-node": "warn",
     "react/no-string-refs": "warn",
     "react/no-this-in-sfc": "error",
+    "react/no-typos": "error",
+    "react/no-unused-state": "warn",
     "react/self-closing-comp": "error",
     "react/sort-comp": [
       "error",
@@ -193,6 +196,7 @@ module.exports = {
 
     // jsx-a11y
     "jsx-a11y/anchor-has-content": "warn",
+    "jsx-a11y/control-has-associated-label": "warn",
     "jsx-a11y/label-has-associated-control": "warn",
     "jsx-a11y/no-noninteractive-tabindex": "warn",
     "jsx-a11y/no-redundant-roles": "warn",
@@ -222,7 +226,7 @@ module.exports = {
     "import/ignore": ["node_modules"],
 
     react: {
-      version: "16.4"
+      version: "16.8"
     }
   }
 };
