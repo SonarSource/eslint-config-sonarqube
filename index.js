@@ -40,11 +40,13 @@ module.exports = {
     "array-callback-return": "error",
     "block-scoped-var": "error",
     complexity: "warn",
+    curly: "error",
     "consistent-return": "warn",
     eqeqeq: ["error", "smart"],
     "guard-for-in": "error",
     "no-alert": "error",
     "no-caller": "error",
+    "no-console": "error",
     "no-div-regex": "error",
     "no-eval": "error",
     "no-extend-native": "error",
@@ -141,6 +143,7 @@ module.exports = {
     "import/no-named-as-default-member": "error",
     "import/no-named-default": "error",
     "import/no-webpack-loader-syntax": "error",
+    "import/no-useless-path-segments": ["error", { noUselessIndex: true }],
     "import/order": [
       "error",
       {
@@ -157,6 +160,12 @@ module.exports = {
     // does not properly work with ts
     "import/no-unresolved": "off",
 
+    // disabled because it's way too slow
+    /* "import/no-unused-modules": [
+      "error",
+      { missingExports: false, unusedExports: true }
+    ], */
+
     // react
     // TODO turn all rules to "error" eventually
     "react/button-has-type": "warn",
@@ -168,12 +177,21 @@ module.exports = {
     "react/jsx-sort-default-props": "warn",
     "react/jsx-sort-props": "warn",
     "react/jsx-fragments": ["warn", "syntax"],
+    "react/jsx-curly-spacing": [
+      "error",
+      { when: "never", allowMultiline: true }
+    ],
+    "react/jsx-curly-brace-presence": [
+      "error",
+      { props: "never", children: "never" }
+    ],
     "react/no-access-state-in-setstate": "warn",
     "react/no-deprecated": "warn",
     "react/no-find-dom-node": "warn",
     "react/no-string-refs": "warn",
     "react/no-this-in-sfc": "error",
     "react/no-typos": "error",
+    "react/no-unescaped-entities": "error",
     "react/no-unused-state": "warn",
     "react/self-closing-comp": "error",
     "react/sort-comp": [
