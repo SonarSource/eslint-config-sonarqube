@@ -13,6 +13,7 @@ yarn add --dev \
   eslint-plugin-jsx-a11y \
   eslint-plugin-promise \
   eslint-plugin-react \
+  eslint-plugin-react-hooks \
   eslint-plugin-sonarjs \
   eslint \
   typescript-eslint-parser

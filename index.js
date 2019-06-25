@@ -26,7 +26,7 @@ module.exports = {
 
   parser: "@typescript-eslint/parser",
 
-  plugins: ["import", "jsx-a11y", "react", "promise", "sonarjs"],
+  plugins: ["import", "jsx-a11y", "react", "react-hooks", "promise", "sonarjs"],
 
   rules: {
     // possible errors
@@ -193,6 +193,10 @@ module.exports = {
 
     // turn off prop types validation, better use ts ;)
     "react/prop-types": "off",
+
+    // react hooks
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
 
     // jsx-a11y
     "jsx-a11y/anchor-has-content": "warn",
