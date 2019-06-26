@@ -234,7 +234,7 @@ module.exports = {
 
     // promise
     "promise/catch-or-return": ["warn", { allowThen: true }],
-
+    "promise/no-return-wrap": ["error", { allowReject: true }],
     "promise/always-return": "off",
     "promise/avoid-new": "off",
 
