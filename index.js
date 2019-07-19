@@ -144,18 +144,6 @@ module.exports = {
     "import/no-named-default": "error",
     "import/no-webpack-loader-syntax": "error",
     "import/no-useless-path-segments": ["error", { noUselessIndex: true }],
-    "import/order": [
-      "error",
-      {
-        groups: [
-          "builtin",
-          "external",
-          ["index", "sibling"],
-          ["parent", "internal"]
-        ],
-        "newlines-between": "never"
-      }
-    ],
 
     // does not properly work with ts
     "import/no-unresolved": "off",
