@@ -26,7 +26,7 @@ module.exports = {
 
   parser: "@typescript-eslint/parser",
 
-  plugins: ["import", "jsx-a11y", "react", "react-hooks", "promise", "sonarjs"],
+  plugins: ["emotion", "import", "jsx-a11y", "react", "react-hooks", "promise", "sonarjs"],
 
   rules: {
     // possible errors
@@ -127,6 +127,12 @@ module.exports = {
     // https://github.com/eslint/typescript-eslint-parser/issues/77
     "no-undef": "off",
     "no-unused-vars": "off",
+
+    // emotion
+    "emotion/jsx-import": "error",
+    "emotion/no-vanilla": "error",
+    "emotion/import-from-emotion": "error",
+    "emotion/styled-import": "error",
 
     // import
     "import/extensions": ["error", "never", { json: "always", md: "always" }],

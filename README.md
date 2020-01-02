@@ -9,6 +9,7 @@ Install:
 ```
 yarn add --dev \
   eslint-config-sonarqube \
+  eslint-plugin-emotion \
   eslint-plugin-import \
   eslint-plugin-jsx-a11y \
   eslint-plugin-promise \
