@@ -3,6 +3,7 @@ module.exports = {
     "eslint:recommended",
     "plugin:import/errors",
     "plugin:react/recommended",
+    "plugin:jest/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:promise/recommended",
     "plugin:sonarjs/recommended"
@@ -26,7 +27,7 @@ module.exports = {
 
   parser: "@typescript-eslint/parser",
 
-  plugins: ["import", "jsx-a11y", "react", "react-hooks", "promise", "sonarjs"],
+  plugins: ["import", "jest", "jsx-a11y", "react", "react-hooks", "promise", "sonarjs"],
 
   rules: {
     // possible errors
@@ -234,7 +235,21 @@ module.exports = {
     // sonarjs
     "sonarjs/cognitive-complexity": "warn",
     "sonarjs/no-duplicate-string": "warn",
-    "sonarjs/no-identical-functions": "warn"
+    "sonarjs/no-identical-functions": "warn",
+
+    // jest
+    "jest/no-truthy-falsy": "error",
+    "jest/consistent-test-it": ["error", { "fn": "it", "withinDescribe": "it" }],
+    "jest/no-duplicate-hooks": "error",
+    "jest/no-if": "error",
+    "jest/valid-title": "error",
+    'jest/no-disabled-tests': "error",
+    "jest/no-commented-out-tests": "error",
+    "jest/prefer-to-be-null": "error",
+    "jest/prefer-to-be-undefined": "error"
+
+    // TODO would be great to activate at some point
+    "jest/no-large-snapshots": ["off", { "maxSize": 50 }]
   },
 
   settings: {
