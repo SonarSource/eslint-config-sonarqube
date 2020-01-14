@@ -1,6 +1,6 @@
 # eslint-config-sonarqube
 
-ESLint configuration for SonarQube and its plugins.
+ESLint configuration for SonarCloud, SonarQube and its plugins.
 
 ## Usage
 
@@ -10,6 +10,7 @@ Install:
 yarn add --dev \
   eslint-config-sonarqube \
   eslint-plugin-import \
+  eslint-plugin-jest \
   eslint-plugin-jsx-a11y \
   eslint-plugin-promise \
   eslint-plugin-react \
