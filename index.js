@@ -27,7 +27,15 @@ module.exports = {
 
   parser: "@typescript-eslint/parser",
 
-  plugins: ["import", "jest", "jsx-a11y", "react", "react-hooks", "promise", "sonarjs"],
+  plugins: [
+    "import",
+    "jest",
+    "jsx-a11y",
+    "react",
+    "react-hooks",
+    "promise",
+    "sonarjs"
+  ],
 
   rules: {
     // possible errors
@@ -192,7 +200,7 @@ module.exports = {
     "react/no-redundant-should-component-update": "error",
     "react/no-will-update-set-state": "error",
     "react/no-unsafe": "error",
-    "react/void-dom-elements-no-children": "error"
+    "react/void-dom-elements-no-children": "error",
     "react/jsx-sort-props": "error",
 
     // turn off prop types validation, better use ts ;)
@@ -239,17 +247,17 @@ module.exports = {
 
     // jest
     "jest/no-truthy-falsy": "error",
-    "jest/consistent-test-it": ["error", { "fn": "it", "withinDescribe": "it" }],
+    "jest/consistent-test-it": ["error", { fn: "it", withinDescribe: "it" }],
     "jest/no-duplicate-hooks": "error",
     "jest/no-if": "error",
     "jest/valid-title": "error",
-    'jest/no-disabled-tests': "error",
+    "jest/no-disabled-tests": "error",
     "jest/no-commented-out-tests": "error",
     "jest/prefer-to-be-null": "error",
-    "jest/prefer-to-be-undefined": "error"
+    "jest/prefer-to-be-undefined": "error",
 
     // TODO would be great to activate at some point
-    "jest/no-large-snapshots": ["off", { "maxSize": 50 }]
+    "jest/no-large-snapshots": ["off", { maxSize: 50 }]
   },
 
   settings: {
