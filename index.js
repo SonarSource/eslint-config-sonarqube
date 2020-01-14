@@ -85,7 +85,7 @@ module.exports = {
     camelcase: "warn",
     "consistent-this": ["warn", "that"],
     "func-name-matching": "error",
-    "func-style": ["warn", "declaration", { allowArrowFunctions: true }],
+    "func-style": ["error", "declaration", { allowArrowFunctions: true }],
     "lines-between-class-members": [
       "error",
       "always",
@@ -144,6 +144,7 @@ module.exports = {
     "import/no-named-default": "error",
     "import/no-webpack-loader-syntax": "error",
     "import/no-useless-path-segments": ["error", { noUselessIndex: true }],
+    "import/prefer-default-export": "warn",
 
     // does not properly work with ts
     "import/no-unresolved": "off",
@@ -154,33 +155,24 @@ module.exports = {
       { missingExports: false, unusedExports: true }
     ], */
 
-    // react
-    // TODO turn all rules to "error" eventually
-    "react/button-has-type": "warn",
-    "react/display-name": "warn",
+    // react, customization of rules
+    "react/button-has-type": "error",
     "react/jsx-boolean-value": ["error", "always"],
-    "react/jsx-no-comment-textnodes": "warn",
-    "react/jsx-no-target-blank": "warn",
     "react/jsx-pascal-case": "error",
-    "react/jsx-sort-default-props": "warn",
-    "react/jsx-sort-props": "warn",
-    "react/jsx-fragments": ["warn", "syntax"],
+    "react/jsx-sort-default-props": "error",
+    "react/jsx-fragments": "error",
     "react/jsx-curly-spacing": [
       "error",
       { when: "never", allowMultiline: true }
     ],
     "react/jsx-curly-brace-presence": [
       "error",
-      { props: "never", children: "never" }
+      { props: "never", children: "ignore" }
     ],
-    "react/no-access-state-in-setstate": "warn",
-    "react/no-deprecated": "warn",
-    "react/no-find-dom-node": "warn",
-    "react/no-string-refs": "warn",
+    "react/no-access-state-in-setstate": "error",
     "react/no-this-in-sfc": "error",
     "react/no-typos": "error",
-    "react/no-unescaped-entities": "error",
-    "react/no-unused-state": "warn",
+    "react/no-unused-state": "error",
     "react/self-closing-comp": "error",
     "react/sort-comp": [
       "error",
@@ -196,9 +188,22 @@ module.exports = {
         groups: { rendering: ["/^render.+$/", "render"] }
       }
     ],
+    "react/no-redundant-should-component-update": "error",
+    "react/no-will-update-set-state": "error",
+    "react/no-unsafe": "error",
+    "react/void-dom-elements-no-children": "error"
+    "react/jsx-sort-props": "error",
 
     // turn off prop types validation, better use ts ;)
     "react/prop-types": "off",
+
+    // TODO turn all remaining rules to "error" eventually
+    "react/jsx-no-useless-fragment": "warn",
+    "react/no-array-index-key": "warn",
+    "react/no-danger": "warn",
+
+    // TODO could be activated at some point, but too many issues currently
+    "react/jsx-handler-names": "off",
 
     // react hooks
     "react-hooks/rules-of-hooks": "error",
