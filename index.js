@@ -201,7 +201,6 @@ module.exports = {
     "react/no-will-update-set-state": "error",
     "react/no-unsafe": "error",
     "react/void-dom-elements-no-children": "error",
-    "react/jsx-sort-props": "error",
 
     // turn off prop types validation, better use ts ;)
     "react/prop-types": "off",
