@@ -153,7 +153,6 @@ module.exports = {
     "import/no-named-default": "error",
     "import/no-webpack-loader-syntax": "error",
     "import/no-useless-path-segments": ["error", { noUselessIndex: true }],
-    "import/prefer-default-export": "warn",
 
     // does not properly work with ts
     "import/no-unresolved": "off",
