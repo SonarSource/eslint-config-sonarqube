@@ -36,7 +36,7 @@ module.exports = {
     "no-unsafe-negation": "error",
 
     // best practices
-    // TODO turn all rules to "error" eventually
+    // turn all rules to "error" eventually
     "array-callback-return": "error",
     "block-scoped-var": "error",
     complexity: "warn",
@@ -154,24 +154,34 @@ module.exports = {
       { missingExports: false, unusedExports: true }
     ], */
 
-    // react, customization of rules
+    // react
+    // overwrite recomended
+    "react/no-unsafe": "error",
+    "react/prop-types": "off", // turn off prop types validation, better use ts ;)
+
+    // not in recomended
     "react/button-has-type": "error",
+    "react/jsx-no-script-url": "error",
     "react/jsx-boolean-value": ["error", "always"],
     "react/jsx-pascal-case": "error",
     "react/jsx-sort-default-props": "error",
     "react/jsx-fragments": "error",
     "react/jsx-curly-spacing": [
       "error",
-      { when: "never", allowMultiline: true }
+      { when: "never", allowMultiline: true },
     ],
     "react/jsx-curly-brace-presence": [
       "error",
-      { props: "never", children: "ignore" }
+      { props: "never", children: "ignore" },
     ],
     "react/no-access-state-in-setstate": "error",
     "react/no-this-in-sfc": "error",
     "react/no-typos": "error",
     "react/no-unused-state": "error",
+    "react/no-redundant-should-component-update": "error",
+    "react/no-will-update-set-state": "error",
+    "react/no-adjacent-inline-elements": "error",
+    "react/no-unused-prop-types": "error",
     "react/self-closing-comp": "error",
     "react/sort-comp": [
       "error",
@@ -182,46 +192,48 @@ module.exports = {
           "static-methods",
           "lifecycle",
           "everything-else",
-          "rendering"
+          "rendering",
         ],
-        groups: { rendering: ["/^render.+$/", "render"] }
-      }
+        groups: { rendering: ["/^render.+$/", "render"] },
+      },
     ],
-    "react/no-redundant-should-component-update": "error",
-    "react/no-will-update-set-state": "error",
-    "react/no-unsafe": "error",
     "react/void-dom-elements-no-children": "error",
 
-    // turn off prop types validation, better use ts ;)
-    "react/prop-types": "off",
-
-    // TODO turn all remaining rules to "error" eventually
+    // turn all remaining rules to "error" eventually
+    "react/style-prop-object": "warn",
     "react/jsx-no-useless-fragment": "warn",
     "react/no-array-index-key": "warn",
     "react/no-danger": "warn",
+    "react/function-component-definition": [
+      "warn",
+      {
+        namedComponents: "function-declaration",
+        unnamedComponents: "function-expression",
+      },
+    ],
 
-    // TODO could be activated at some point, but too many issues currently
-    "react/jsx-handler-names": "off",
+    "react/jsx-handler-names": "off", // could be activated at some point, but too many issues currently
 
     // react hooks
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
 
     // jsx-a11y
+    // error in recomended
     "jsx-a11y/anchor-has-content": "warn",
-    "jsx-a11y/control-has-associated-label": "warn",
     "jsx-a11y/label-has-associated-control": "warn",
     "jsx-a11y/no-noninteractive-tabindex": "warn",
     "jsx-a11y/no-redundant-roles": "warn",
     "jsx-a11y/no-static-element-interactions": "warn",
-
     "jsx-a11y/accessible-emoji": "off",
     "jsx-a11y/anchor-is-valid": "off",
     "jsx-a11y/click-events-have-key-events": "off",
     "jsx-a11y/no-autofocus": "off",
     "jsx-a11y/no-noninteractive-element-interactions": "off",
-    // has FPs
-    "jsx-a11y/label-has-for": "off",
+    "jsx-a11y/label-has-for": "off", // has FPs
+
+    // not in recomended
+    "jsx-a11y/control-has-associated-label": "warn",
 
     // promise
     "promise/catch-or-return": ["warn", { allowThen: true }],
@@ -230,18 +242,29 @@ module.exports = {
     "promise/avoid-new": "off",
 
     // jest
-    "jest/no-truthy-falsy": "error",
+    // overwrite recomended
+    "jest/no-disabled-tests": "error",
+    "jest/no-commented-out-tests": "error",
+
+    // not in recomended
+    "jest/no-restricted-matchers": [
+      "error",
+      {
+        toBeTruthy: "Avoid `toBeTruthy`",
+        toBeFalsy: "Avoid `toBeFalsy`",
+      },
+    ],
     "jest/consistent-test-it": ["error", { fn: "it", withinDescribe: "it" }],
     "jest/no-duplicate-hooks": "error",
     "jest/no-if": "error",
     "jest/valid-title": "error",
-    "jest/no-disabled-tests": "error",
-    "jest/no-commented-out-tests": "error",
     "jest/prefer-to-be-null": "error",
     "jest/prefer-to-be-undefined": "error",
 
-    // TODO would be great to activate at some point
-    "jest/no-large-snapshots": ["off", { maxSize: 50 }]
+    "jest/no-interpolation-in-snapshots": "warn",
+    "jest/no-conditional-expect": "warn",
+
+    "jest/no-large-snapshots": ["off", { maxSize: 50 }], // would be great to activate at some point
   },
 
   settings: {
