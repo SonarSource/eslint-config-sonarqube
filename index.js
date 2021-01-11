@@ -6,14 +6,13 @@ module.exports = {
     "plugin:jest/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:promise/recommended",
-    "plugin:sonarjs/recommended"
   ],
 
   env: {
     browser: true,
     es6: true,
     jest: true,
-    node: true
+    node: true,
   },
 
   parserOptions: {
@@ -21,21 +20,13 @@ module.exports = {
     sourceType: "module",
     ecmaFeatures: {
       jsx: true,
-      modules: true
-    }
+      modules: true,
+    },
   },
 
   parser: "@typescript-eslint/parser",
 
-  plugins: [
-    "import",
-    "jest",
-    "jsx-a11y",
-    "react",
-    "react-hooks",
-    "promise",
-    "sonarjs"
-  ],
+  plugins: ["import", "jest", "jsx-a11y", "react", "react-hooks", "promise"],
 
   rules: {
     // possible errors
@@ -98,7 +89,7 @@ module.exports = {
     "lines-between-class-members": [
       "error",
       "always",
-      { exceptAfterSingleLine: true }
+      { exceptAfterSingleLine: true },
     ],
     "max-depth": "warn",
     "max-lines": ["warn", 1000],
@@ -116,7 +107,7 @@ module.exports = {
     "padding-line-between-statements": [
       "error",
       { blankLine: "always", prev: "*", next: ["class", "function"] },
-      { blankLine: "always", prev: ["class", "function"], next: "*" }
+      { blankLine: "always", prev: ["class", "function"], next: "*" },
     ],
 
     // es2015
@@ -238,11 +229,6 @@ module.exports = {
     "promise/always-return": "off",
     "promise/avoid-new": "off",
 
-    // sonarjs
-    "sonarjs/cognitive-complexity": "warn",
-    "sonarjs/no-duplicate-string": "warn",
-    "sonarjs/no-identical-functions": "warn",
-
     // jest
     "jest/no-truthy-falsy": "error",
     "jest/consistent-test-it": ["error", { fn: "it", withinDescribe: "it" }],
@@ -262,7 +248,7 @@ module.exports = {
     "import/ignore": ["node_modules"],
 
     react: {
-      version: "16.8"
-    }
-  }
+      version: "16.8",
+    },
+  },
 };
