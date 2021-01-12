@@ -4,14 +4,18 @@
   "description": "ESLint configuration for SonarQube and its plugins.",
   "main": "index.js",
   "license": "LGPL-3.0",
+  "engines": {
+    "node": ">=10.12.0"
+  },
   "peerDependencies": {
-    "eslint": ">= 6.8",
-    "eslint-plugin-import": ">= 2.20.0",
-    "eslint-plugin-jest": ">= 23.20.0",
+    "@typescript-eslint/eslint-plugin": ">= 4.13.0",
+    "@typescript-eslint/parser": ">= 4.13.0",
+    "eslint": ">= 7.17.0",
+    "eslint-plugin-import": ">= 2.22.0",
+    "eslint-plugin-jest": ">= 24.1.0",
     "eslint-plugin-jsx-a11y": ">= 6.4.0",
     "eslint-plugin-promise": ">= 4.2.0",
     "eslint-plugin-react": ">= 7.22.0",
-    "eslint-plugin-react-hooks": ">= 2.5.0",
-    "@typescript-eslint/parser": ">= 2.24"
+    "eslint-plugin-react-hooks": ">= 4.2.0"
   }
 }
