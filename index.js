@@ -78,7 +78,6 @@ module.exports = {
     "no-unused-expressions": "error",
     "no-useless-call": "error",
     "no-useless-concat": "error",
-    "no-useless-constructor": "error",
     "no-useless-return": "error",
     "no-void": "error",
     radix: "error",
@@ -128,6 +127,10 @@ module.exports = {
     "no-extra-semi": "off",
     "prefer-rest-params": "warn",
     "prefer-spread": "warn",
+
+    // @typescript-eslint
+    "no-useless-constructor": "off",
+    "@typescript-eslint/no-useless-constructor": ["error"],
 
     // import
     "import/extensions": ["error", "never", { json: "always", md: "always" }],
