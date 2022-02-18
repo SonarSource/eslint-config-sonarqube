@@ -263,8 +263,7 @@ module.exports = {
     "jest/consistent-test-it": ["error", { fn: "it", withinDescribe: "it" }],
     "jest/no-duplicate-hooks": "error",
     "jest/no-if": "error",
-    "jest/prefer-to-be-null": "error",
-    "jest/prefer-to-be-undefined": "error",
+    "jest/prefer-to-be": "error",
 
     "jest/no-large-snapshots": ["off", { maxSize: 50 }], // would be great to activate at some point
   },
