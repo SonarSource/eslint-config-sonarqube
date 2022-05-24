@@ -27,6 +27,7 @@ Add `extends: 'sonarqube'` to your local `.eslintrc`
 Release:
 
 1. Update the version in `package.json`
-2. Commit the change with a version message: `git commit -m "vx.y.z"`
-3. Tag the commit with the version : `git tag vx.y.z`
-4. Publish on npm: `yarn publish`
+2. Update the `CHANGELOG.md`
+3. Commit the change with a version message: `git commit -m "vx.y.z"`
+4. Tag the commit with the version : `git tag vx.y.z`
+5. Publish on npm: `yarn publish`
