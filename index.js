@@ -203,9 +203,12 @@ module.exports = {
     ],
     "react/style-prop-object": "error",
     "react/void-dom-elements-no-children": "error",
+    "react/hook-use-state": "error",
+    "react/no-arrow-function-lifecycle": "error",
+    "react/no-namespace": "error",
 
     // turn all remaining rules to "error" eventually
-    "react/jsx-no-useless-fragment": "warn",
+    "react/jsx-no-useless-fragment": ["warn", { allowExpressions: true }],
     "react/no-array-index-key": "warn",
     "react/no-danger": "warn",
     "react/function-component-definition": [
@@ -218,6 +221,7 @@ module.exports = {
 
     // could be activated at some point, but too many issues currently
     "react/jsx-handler-names": "off",
+    "react/jsx-no-leaked-render": "off", // too many false positives right now
 
     // react hooks
     "react-hooks/rules-of-hooks": "error",
