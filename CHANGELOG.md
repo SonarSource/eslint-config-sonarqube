@@ -1,3 +1,30 @@
+# 2.0.0-rc (2022-05.27)
+
+Breaking changes:
+
+- Raise minimum nodejs version from v10.12 to v12.22
+- Upgrade eslint from v7 to v8
+
+Plugins updates:
+
+- Raise minimum version of eslint-plugin-import to v2.25
+- Raise minimum version of eslint-plugin-jsx-a11y v6.5
+- Raise minimum version of eslint-plugin-promise v6
+- Raise minimum version of eslint-plugin-react v7.30
+- Raise minimum version of eslint-plugin-react-hooks v4.3
+- Raise minimum version of eslint-plugin-jest v26.1
+
+Rules changes:
+
+- Replace jest/no-if by jest/no-conditional-in-test
+- Add jest/prefer-equality-matcher
+- Add jest/prefer-comparison-matcher
+- Add react/hook-use-state
+- Add react/no-arrow-function-lifecycle
+- Add react/no-namespace
+- Disable react/jsx-no-leaked-render due to too many FP
+- allowExpressions in react/jsx-no-useless-fragment
+
 # 1.1.0 (2022-05-24)
 
 - Bump eslint-plugin-jest to v25 ([#9](https://github.com/SonarSource/eslint-config-sonarqube/pull/9))
