@@ -1,4 +1,4 @@
-# 2.0.0-rc (2022-05.27)
+# 2.0.0 (2022-05-31)
 
 Breaking changes:
 
@@ -16,7 +16,7 @@ Plugins updates:
 
 Rules changes:
 
-- Replace jest/no-if by jest/no-conditional-in-test
+- Replace jest/no-if by jest/no-conditional-in-test in warn mode instead of error
 - Add jest/prefer-equality-matcher
 - Add jest/prefer-comparison-matcher
 - Add react/hook-use-state
