@@ -1,3 +1,10 @@
+# 2.1.0 (2022-05-31)
+
+New plugins for RTL:
+
+- Add plugin eslint-plugin-jest-dom with recommended ruleset
+- Add plugin eslint-plugin-testing-library with recommended ruleset
+
 # 2.0.0 (2022-05-31)
 
 Breaking changes:
