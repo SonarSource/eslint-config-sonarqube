@@ -14,10 +14,12 @@ yarn add --dev \
   eslint-config-sonarqube \
   eslint-plugin-import \
   eslint-plugin-jest \
+  eslint-plugin-jest-dom \
   eslint-plugin-jsx-a11y \
   eslint-plugin-promise \
+  eslint-plugin-testing-library \
   eslint-plugin-react \
-  eslint-plugin-react-hooks \
+  eslint-plugin-react-hooks
 ```
 
 Configure:
