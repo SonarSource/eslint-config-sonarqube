@@ -266,10 +266,10 @@ module.exports = {
     ],
     "jest/consistent-test-it": ["error", { fn: "it", withinDescribe: "it" }],
     "jest/no-duplicate-hooks": "error",
-    "jest/no-conditional-in-test": "error",
     "jest/prefer-equality-matcher": "error",
     "jest/prefer-comparison-matcher": "error",
 
+    "jest/no-conditional-in-test": "warn",
     "jest/no-large-snapshots": ["off", { maxSize: 50 }], // would be great to activate at some point
   },
 
