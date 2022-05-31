@@ -4,8 +4,10 @@ module.exports = {
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:import/errors",
     "plugin:jest/recommended",
+    "plugin:jest-dom/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:promise/recommended",
+    "plugin:testing-library/react",
     "plugin:react/recommended",
   ],
 
