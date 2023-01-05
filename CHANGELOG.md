@@ -1,3 +1,9 @@
+# 2.1.1 (2023-01-05)
+
+Rules changes:
+
+- Remove react/no-array-index-key which is already reported in sonarjs 9.12.0
+
 # 2.1.0 (2022-05-31)
 
 New plugins for RTL:
