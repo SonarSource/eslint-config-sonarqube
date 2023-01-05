@@ -211,7 +211,6 @@ module.exports = {
 
     // turn all remaining rules to "error" eventually
     "react/jsx-no-useless-fragment": ["warn", { allowExpressions: true }],
-    "react/no-array-index-key": "warn",
     "react/no-danger": "warn",
     "react/function-component-definition": [
       "warn",
