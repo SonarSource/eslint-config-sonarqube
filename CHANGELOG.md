@@ -1,3 +1,9 @@
+# 2.1.2 (2023-03-13)
+
+Rules changes:
+
+- replace deprecated rule `jsx-sort-default-props` with `sort-default-props` from eslint-plugin-react v7.32.0
+
 # 2.1.1 (2023-01-05)
 
 Rules changes:
