@@ -170,7 +170,6 @@ module.exports = {
     "react/jsx-no-script-url": "error",
     "react/jsx-boolean-value": ["error", "always"],
     "react/jsx-pascal-case": "error",
-    "react/jsx-sort-default-props": "error",
     "react/jsx-fragments": "error",
     "react/jsx-curly-spacing": [
       "error",
@@ -203,6 +202,7 @@ module.exports = {
         groups: { rendering: ["/^render.+$/", "render"] },
       },
     ],
+    "react/sort-default-props": "error",
     "react/style-prop-object": "error",
     "react/void-dom-elements-no-children": "error",
     "react/hook-use-state": "error",
