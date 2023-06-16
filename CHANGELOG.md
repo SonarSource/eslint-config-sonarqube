@@ -1,3 +1,9 @@
+# 2.1.3 (2023-06-16)
+
+Rules changes:
+
+- Update `react/jsx-boolean-value` to use the default value
+
 # 2.1.2 (2023-03-13)
 
 Rules changes:

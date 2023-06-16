@@ -168,7 +168,7 @@ module.exports = {
     // not in recomended
     "react/button-has-type": "error",
     "react/jsx-no-script-url": "error",
-    "react/jsx-boolean-value": ["error", "always"],
+    "react/jsx-boolean-value": "error",
     "react/jsx-pascal-case": "error",
     "react/jsx-fragments": "error",
     "react/jsx-curly-spacing": [
