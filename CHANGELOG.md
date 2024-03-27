@@ -1,3 +1,9 @@
+# 2.2.0 (2024-036-27)
+
+Rules changes:
+
+- switch from @typescript-eslint/eslint-recommended to @typescript-eslint/recommended
+
 # 2.1.3 (2023-06-16)
 
 Rules changes:
