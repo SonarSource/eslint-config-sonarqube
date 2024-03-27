@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
     "eslint:recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:import/errors",
     "plugin:jest/recommended",
     "plugin:jest-dom/recommended",
@@ -82,6 +82,8 @@ module.exports = {
     "no-useless-concat": "error",
     "no-useless-return": "error",
     "no-void": "error",
+    "prefer-rest-params": "warn",
+    "prefer-spread": "warn",
     radix: "error",
     "require-atomic-updates": "error",
     "require-await": "error",
@@ -122,13 +124,6 @@ module.exports = {
     "prefer-arrow-callback": "error",
     "prefer-destructuring": ["warn", { object: true, array: false }],
     "prefer-numeric-literals": "warn",
-
-    // override @typescript-eslint/eslint-recommended
-    "no-unused-vars": "off",
-    "no-array-constructor": "off",
-    "no-extra-semi": "off",
-    "prefer-rest-params": "warn",
-    "prefer-spread": "warn",
 
     // @typescript-eslint
     "no-useless-constructor": "off",
